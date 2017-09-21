@@ -6006,7 +6006,12 @@ h3 {
 ul {
   margin: 1em 0 1em; }
   ul li {
-    margin-bottom: 0.5em; }
+    margin-bottom: .5em; }
 
 hr {
   margin: 2em 0; }
+
+pre {
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1); }
