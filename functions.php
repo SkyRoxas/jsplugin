@@ -10,9 +10,7 @@ function add_custom_scripts() {
 
 }
 add_action('wp_enqueue_scripts', 'add_custom_scripts');
-?>
 
-<?php
 /**
  * Register menu
  *
@@ -26,10 +24,7 @@ function register_my_menus() {
   );
 }
 add_action( 'init', 'register_my_menus' );
-?>
 
-
-<?php
 /**
  * Register our sidebars and widgetized areas.
  *
