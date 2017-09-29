@@ -6055,6 +6055,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .navigation.pagination h2 {
     display: none; }
 
+ul.post-categories > li {
+  list-style: none; }
+
 #page {
   background: #fff; }
 
@@ -6077,6 +6080,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 #footer {
   background: #555555; }
+
+h2 a {
+  color: inherit; }
 
 h3 {
   font-size: 1.6rem;
