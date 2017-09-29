@@ -1,0 +1,17 @@
+.navigation.pagination{
+  display: flex;
+  justify-content: flex-end;
+  .nav-links{
+    >*{
+      padding: 0px 15px;
+      border-right: 1px solid $gray-light;
+      font-weight: bold;
+      &:last-child(){
+        border-right: 0px;
+      }
+    }
+  }
+  h2{
+    display: none;
+  }
+}

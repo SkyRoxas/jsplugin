@@ -3,25 +3,22 @@
   <!--<header>-->
   <?php get_header(); ?>
   <!--</header>-->
-  <div id="page" class ="container py-5">
+  <div id="page" class ="container">
+    <div class="row no-gutters">
 
-    <div class="wrap row">
+      <div id ="content" role="main" class="col-8">
 
-      <div class="col-9">
-
-        <div id ="content" role="main">
-
+        <div class="wrap p-5">
+          <div class="lineleft py-5"></div>
           <!-- Page content -->
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
           <article>
             <div class="title mb-5">
-              <h1>
-                <a href="<?php the_permalink();?>">
-                  <?php the_title(); ?>
-                </a>
-              </h1>
+              <a href="<?php the_permalink();?>">
+                <h1><?php the_title(); ?></h1>
+              </a>
             </div>
             <div class="body">
                <?php the_content(); ?>
@@ -30,15 +27,14 @@
 
           <?php endwhile; else : ?>
         <?php endif; ?>
-
         </div>
 
       </div>
-      <div class="col-3">
-        <?php get_sidebar(); ?>
+      <div id ="sidebar-first" class="col-4">
+        <div class="p-5">
+          <?php get_sidebar(); ?>
+        </div>
       </div>
-
-
     </div>
 
   </div>

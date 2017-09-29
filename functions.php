@@ -12,6 +12,18 @@ function add_custom_scripts() {
 add_action('wp_enqueue_scripts', 'add_custom_scripts');
 
 /**
+ * thumbails
+ *
+ */
+add_theme_support('post-thumbnails');
+
+function add_custom_sizes()
+{
+    add_image_size('400X250', 400, 250, array( 'center', 'center'));
+}
+add_action('after_setup_theme', 'add_custom_sizes');
+
+/**
  * Register menu
  *
  */
@@ -42,4 +54,13 @@ function register_widgets_init() {
 
 }
 add_action( 'widgets_init', 'register_widgets_init' );
+
+/**
+ * change readmore text
+ *
+ */
+function set_more_link() {
+  return '<a class="more-link"  style ="color:inherit" href="' . get_permalink() . '">....</a>';
+}
+add_filter( 'the_content_more_link', 'set_more_link' );
 ?>

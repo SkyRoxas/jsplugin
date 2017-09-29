@@ -1,0 +1,41 @@
+#page
+{
+    background: $white;
+}
+
+#header-top
+{
+    background: $mainColor1;
+}
+
+#content
+{
+    div.lineleft
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        display: block;
+
+        width: 1px;
+        height: 100%;
+
+
+        &:after
+        {
+            display: block;
+
+            width: 2px;
+            height: 100%;
+
+            content: '';
+
+            background: $gray-lighter;
+        }
+    }
+}
+
+#footer{
+  background: $gray-dark;
+}
