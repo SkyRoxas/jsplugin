@@ -17,9 +17,11 @@
           <article>
             <?php get_template_part('/template-parts/breadcrumb','yoast' ) ?>
             <div class="title mb-5">
-              <a href="<?php the_permalink();?>">
-                <h1><?php the_title(); ?></h1>
-              </a>
+              <h1>
+                <a href="<?php the_permalink();?>">
+                  <?php the_title(); ?>
+                </a>
+              </h1>
             </div>
             <div class="body">
                <?php the_content(); ?>

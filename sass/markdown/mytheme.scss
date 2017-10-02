@@ -1,4 +1,4 @@
-h2
+h1,h2
 {
     a
     {
@@ -35,4 +35,73 @@ pre
 
     border: 1px solid #e5e5e5;
     box-shadow: 1px 1px 10px rgba(0,0,0,.1);
+}
+
+article
+{
+    .btn
+    {
+        display: flex;
+
+        width: 100%;
+
+        color: #fff;
+        background: $mainColor1;
+
+        justify-content: center;
+        align-items: center;
+        a
+        {
+            color: inherit;
+        }
+    }
+    .btn.github
+    {
+        &:before
+        {
+            display: block;
+
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+
+            content: '';
+
+            background: url('../images/icon/github.png')no-repeat;
+            background-size: 100%;
+        }
+    }
+    .btn.download
+    {
+        &:before
+        {
+            display: block;
+
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+
+            content: '';
+
+            background: url('../images/icon/download.png')no-repeat;
+            background-size: 100%;
+        }
+    }
+    .btn.demo
+    {
+        &:before
+        {
+            display: block;
+
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+
+            content: '';
+
+            background: url('../images/icon/demo.png')no-repeat;
+            background-size: 100%;
+            background-position: center;
+        }
+    }
 }

@@ -8,7 +8,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <title><?php the_title();?></title>
-    
+
     <!--Google ads-->
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
@@ -31,14 +31,22 @@
       <div class="wrap container py-5">
         <div class="d-flex align-items-center">
           <div class ="p-3">
-            <a href="/"><img src="<?php echo get_template_directory_uri().'/image/logo.png'?>" width="250"></a>
+            <a href="/"><img src="<?php echo get_template_directory_uri().'/images/logo.png'?>" width="250"></a>
             <div class="p-3">
               <div style="font-style:italic;"><?php bloginfo();?></div>
               <div class="small"><?php bloginfo('description') ?></div>
             </div>
-            <!--
-
-            -->
+          </div>
+          <div>
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- 台灣函式庫-layout-970X250 -->
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:970px;height:250px"
+                 data-ad-client="ca-pub-3273735728404530"
+                 data-ad-slot="7648310688"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
           </div>
         </div>
       </div>
